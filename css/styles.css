@@ -9,6 +9,8 @@
     --title-text-color: #212121;
     --accent-color: #2196f3;
     --primary-background-color: #ffffff;
+    --secondary-background-color: #2f303a;
+    --title-background-color: #f5f4fa;
     --primary-white-color: #ffffff;
 }
 body {
@@ -16,11 +18,14 @@ body {
     color: var(--primary-text-color);
     font-family: roboto;
 }
-/* Шапка страницы */
+
+/* Шапка и подвал */
+
 .logo {
     color: var(--title-text-color);
     font-family: raleway;
     font-size: 26px;
+    line-height: 1.2;
 }
 .logo-accent {
     color: var(--accent-color);
@@ -34,13 +39,22 @@ body {
 }
 .sate-nav .link {
     color: var(--title-text-color);
+    font-size: 14px;
+    line-height: 1.1;
 }
 .sate-nav .link:active,
 .sate-nav .link:focus {
     color: var(--accent-color);
 }
+
+.cellar {
+    background-color: var(--secondary-background-color);
+}
+
 .contact {
     color: var(--title-text-color);
+    font-size: 14px;
+    line-height: 1.2;
 }
 .contact .mail:focus,
 .contact .mail:hover {
@@ -52,8 +66,67 @@ body {
 }
 .contact .mail,
 .contact .tel {
-    color: inherit;
+    color: var(--primary-text-color);
 }
 
-/* Уникальное содержание страницы */
+/* index.html */
+.hero {
+    background-color: var(--secondary-background-color);
+}
 
+.hero-titel {
+    color: var(--primary-white-color);
+    font-size: 44px;
+    line-height: 1.4;
+}
+.hero-button {
+    background-color: var(--accent-color);
+    color: var(--primary-white-color);
+    font-size: 16px;
+    line-height: 1.9;
+    cursor: pointer;
+}
+.section-title {
+    color: var(--title-text-color);
+    font-size: 14px;
+    line-height: 1.1;
+}
+.section-big {
+    color: var(--title-text-color);
+    font-size: 36px;
+    line-height: 1.2;
+}
+.section-info {
+    font-size: 14px;
+    line-height: 1.7;
+}
+.section-rang {
+    font-size: 16px;
+    line-height: 0.8;
+}
+
+/* portfolio.html */
+
+.sate-option .link {
+    background-color: var(--title-background-color);
+    color: var(--title-text-color);
+    font-size: 16px;
+    line-height: 1.6;
+    cursor: pointer;
+}
+.sate-option .link:hover,
+.sate-option .link:focus {
+    background-color: var(--accent-color);
+    color: var(--primary-white-color);
+}
+
+.section-name {
+    color: var(--title-text-color);
+    font-size: 18px;
+    line-height: 2;
+}
+.section-use {
+    color: var(--primary-text-color);
+    font-size: 16px;
+    line-height: 1.9;
+}
