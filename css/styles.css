@@ -1,0 +1,59 @@
+/* цвет основного текста #757575; */
+/* вторичный цвет текста  #212121
+ */
+/* основной фон #FFFFFF  */
+/* акцент #2196F3 */
+/* вторичный цвет фона #2F303A */
+:root {
+    --primary-text-color: #757575;
+    --title-text-color: #212121;
+    --accent-color: #2196f3;
+    --primary-background-color: #ffffff;
+    --primary-white-color: #ffffff;
+}
+body {
+    background-color: var(--primary-background-color);
+    color: var(--primary-text-color);
+    font-family: roboto;
+}
+/* Шапка страницы */
+.logo {
+    color: var(--title-text-color);
+    font-family: raleway;
+    font-size: 26px;
+}
+.logo-accent {
+    color: var(--accent-color);
+}
+.logo:focus {
+    color: var(--accent-color);
+}
+
+.logo-white {
+    color: var(--primary-white-color);
+}
+.sate-nav .link {
+    color: var(--title-text-color);
+}
+.sate-nav .link:active,
+.sate-nav .link:focus {
+    color: var(--accent-color);
+}
+.contact {
+    color: var(--title-text-color);
+}
+.contact .mail:focus,
+.contact .mail:hover {
+    color: var(--accent-color);
+}
+.contact .tel:focus,
+.contact .tel:hover {
+    color: var(--accent-color);
+}
+.contact .mail,
+.contact .tel {
+    color: inherit;
+}
+
+/* Уникальное содержание страницы */
+
