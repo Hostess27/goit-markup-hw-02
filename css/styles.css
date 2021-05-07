@@ -1,22 +1,39 @@
 /* цвет основного текста #757575; */
-/* вторичный цвет текста  #212121
- */
+/* вторичный цвет текста  #212121*/
 /* основной фон #FFFFFF  */
 /* акцент #2196F3 */
 /* вторичный цвет фона #2F303A */
+/* основной белый цвет #FFFFFF */
 :root {
-    --primary-text-color: #757575;
-    --title-text-color: #212121;
-    --accent-color: #2196f3;
-    --primary-background-color: #ffffff;
-    --secondary-background-color: #2f303a;
-    --title-background-color: #f5f4fa;
-    --primary-white-color: #ffffff;
+    --light-gray: #757575;
+    --dark-gray-100: #212121;
+    --blue: #2196f3;
+    --white: #fff;
+    --dark-gray-200: #2f303a;
+    --star-white: #f5f4fa;
+
+    --primary-text-color: var(--light-gray);
+    --title-text-color: var(--dark-gray-100);
+    --accent-color: var(--blue);
+    --primary-background-color: var(--white);
+    --secondary-background-color: var(--dark-gray-200);
+    --title-background-color: var(--star-white);
 }
 body {
     background-color: var(--primary-background-color);
     color: var(--primary-text-color);
-    font-family: roboto;
+    font-family: Roboto, sans-serif;
+}
+.link {
+    text-decoration: none;
+    outline: none;
+}
+.list {
+    list-style: none;
+}
+.button {
+    cursor: pointer;
+    outline: none;
 }
 
 /* Шапка и подвал */
@@ -26,33 +43,29 @@ body {
     font-family: raleway;
     font-size: 26px;
     line-height: 1.2;
-    text-decoration: none;
 }
-.logo-accent {
-    color: var(--accent-color);
-}
+.logo-accent,
 .logo:focus {
     color: var(--accent-color);
 }
 
 .logo-white {
-    color: var(--primary-white-color);
-}
-.sate-nav .link {
-    color: var(--title-text-color);
-    font-size: 14px;
-    line-height: 1.1;
-    text-decoration: none;
-}
-.sate-nav .link:active,
-.sate-nav .link:focus {
-    color: var(--accent-color);
-}
-.list {
-    list-style: none;
+    color: var(--white);
 }
 
-.cellar {
+.site-nav {
+    font-size: 14px;
+    line-height: 1.1;
+}
+.site-nav .link {
+    color: var(--title-text-color);
+}
+.site-nav .link:active,
+.site-nav .link:focus {
+    color: var(--accent-color);
+}
+
+.footer {
     background-color: var(--secondary-background-color);
 }
 
@@ -61,17 +74,15 @@ body {
     font-size: 14px;
     line-height: 1.2;
 }
-.contact .mail:focus,
-.contact .mail:hover {
-    color: var(--accent-color);
-}
-.contact .tel:focus,
-.contact .tel:hover {
-    color: var(--accent-color);
-}
 .contact .mail,
 .contact .tel {
     color: var(--primary-text-color);
+}
+.contact .mail:focus,
+.contact .mail:hover,
+.contact .tel:focus,
+.contact .tel:hover {
+    color: var(--accent-color);
 }
 
 /* index.html */
@@ -79,17 +90,16 @@ body {
     background-color: var(--secondary-background-color);
 }
 
-.hero-titel {
-    color: var(--primary-white-color);
+.hero-title {
+    color: var(--white);
     font-size: 44px;
     line-height: 1.4;
 }
 .hero-button {
     background-color: var(--accent-color);
-    color: var(--primary-white-color);
+    color: var(--white);
     font-size: 16px;
     line-height: 1.9;
-    cursor: pointer;
 }
 
 .section-title {
@@ -113,17 +123,19 @@ body {
 
 /* portfolio.html */
 
-.sate-option .link {
-    background-color: var(--title-background-color);
-    color: var(--title-text-color);
+.site-option {
     font-size: 16px;
     line-height: 1.6;
-    cursor: pointer;
 }
-.sate-option .link:hover,
-.sate-option .link:focus {
+
+.site-option .link {
+    background-color: var(--title-background-color);
+    color: var(--title-text-color);
+}
+.site-option .link:hover,
+.site-option .link:focus {
     background-color: var(--accent-color);
-    color: var(--primary-white-color);
+    color: var(--white);
 }
 
 .section-name {
