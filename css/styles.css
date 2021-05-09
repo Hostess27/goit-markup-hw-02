@@ -95,8 +95,6 @@ body {
     letter-spacing: 0.02em;
 }
 .adds-like {
-    text-decoration: none;
-    outline: none;
     font-style: normal;
 }
 .adds {
@@ -155,15 +153,13 @@ body {
 /* portfolio.html */
 
 .site-option .site-option-button {
+    background-color: var(--title-background-color);
+    color: var(--title-text-color);
     font-size: 16px;
     line-height: 1.62;
     font-weight: 500;
 }
 
-.site-option .site-option-button {
-    background-color: var(--title-background-color);
-    color: var(--title-text-color);
-}
 .site-option .site-option-button:hover,
 .site-option .site-option-button:focus {
     background-color: var(--accent-color);
